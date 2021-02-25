@@ -1,0 +1,83 @@
+
+PerspectiveCamera {
+    center 0 0 220
+    direction 0 0 -1
+    up 0 1 0
+    angle 30
+    width 1280
+    height 720
+    focus 225
+    radius 0
+}
+
+Materials {
+    numMaterials 7
+    Material { color 0.9 0.9 0.9 
+    }
+    Material { color 0.8 0.6 0.6 }
+    Material { color 0.6 0.6 0.8 }
+    Material { color 1 1 1 
+        reflection 1.0
+    }
+    Material { color 1 1 1 
+        reflection 0.2
+        refraction 0.8
+        refraction_rate 2.5
+    }
+    Material { color 0.45 0.925 0.88 }
+    Material { color 0 0 0
+        light 20 20 20
+    }
+}
+
+Group {
+    numObjects 9
+    MaterialIndex 0
+    Plane {
+	normal 0 1 0
+        offset -50
+    }
+    Plane {
+	normal 0 1 0
+        offset 50
+    }
+    Plane {
+	normal 0 0 1
+        offset -50
+        texture testcases/background.tga
+        point1 -80 50 -50
+        point2 80 50 -50
+        point3 -80 -50 -50
+        point4 80 -50 -50
+    }
+    Plane {
+    normal 0 0 1
+        offset 230
+    }
+    MaterialIndex 1
+    Plane {
+	normal 1 0 0
+        offset -70
+    }
+    MaterialIndex 2
+    Plane {
+	normal 1 0 0
+        offset 70
+    }
+    MaterialIndex 3
+    Sphere {
+	center -30 -30 -5
+        radius 20
+    }
+    MaterialIndex 4
+    Sphere {
+	center 30 -30 5
+        radius 20
+    }
+    MaterialIndex 6
+    Sphere {
+    center 0 649.8 0
+        radius 600
+    }
+}
+
