@@ -6,5 +6,5 @@
 
 当时写大作业的时候还不会用git，这个项目是之后整理上传的，所以没有多少commit。
 
-最后，放一张最好的渲染结果显摆一下：![](.\result\scene01.png)
+最后，放一张最好的渲染结果显摆一下：![](https://github.com/fan-wenxiang/Homework_Graphics/raw/master/result/scene01.bmp)
 
